@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title>bank</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- main css file start -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Main css file close -->
+
+    <!--  font awesome link start -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- font awesome lik close -->
+
+    <!-- Google fonts start -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@500;800&display=swap"
+      rel="stylesheet" />
+
+    <!-- google fonts close -->
+
+    <!-- tailwind css link start -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind css link close -->
+  </head>
+  <body class="bg-[#0f172a]">
+    <header>
+      <h1 class="text-5xl text-white text-center mt-10">
+        Let's Get Some
+        <span class="font-semibold text-sky-500">Moooooney</span>!!!
+      </h1>
+    </header>
+
+    <main>
+      <section class="mt-20">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+          <div class="bg-green-500 py-10 pl-10 text-white rounded-2xl">
+            <h1 class="text-4xl">Deposit</h1>
+            <p class="text-2xl mt-4">$<span id="deposit-total">00</span></p>
+          </div>
+          <div class="bg-yellow-600 py-10 pl-10 text-white rounded-2xl">
+            <h1 class="text-4xl">Withdraw</h1>
+            <p class="text-2xl mt-4">$<span id="withdraw-total">00</span></p>
+          </div>
+          <div class="bg-violet-600 py-10 pl-10 text-white rounded-2xl">
+            <h1 class="text-4xl">Balance</h1>
+            <p class="text-2xl mt-4">$<span id="balance-total">1240</span></p>
+          </div>
+        </div>
+      </section>
+      <!-- deposit and withdraw -->
+      <section class="mt-10 px-20">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+          <!-- deposit -->
+          <div class="bg-[#df5ec7] py-10 pl-10 rounded-2xl">
+            <h1 class="text-4xl text-white">Please Deposit</h1>
+            <input
+              type="number"
+              name=""
+              id="deposit-field"
+              placeholder="Enter Deposit Amount $"
+              class="w-[300px] mt-5 py-2 px-5 rounded-full border-none outline-none" />
+            <br />
+            <button
+              id="btn-deposit"
+              class="bg-[#0f172a] text-white px-6 py-2 rounded-full mt-5">
+              Deposit
+            </button>
+          </div>
+          <!-- withdraw -->
+          <div class="bg-[#974EC3] py-10 pl-10 rounded-2xl">
+            <h1 class="text-4xl text-white">Please Withdraw</h1>
+            <input
+              type="number"
+              name=""
+              id="withdraw-filed"
+              placeholder="Enter Withdraw Amount $"
+              class="w-[300px] mt-5 py-2 px-5 rounded-full border-none outline-none" />
+            <br />
+            <button
+              id="btn-withdraw"
+              class="bg-[#0f172a] text-white px-6 py-2 rounded-full mt-5">
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+    <script></script>
+  </body>
+</html>
